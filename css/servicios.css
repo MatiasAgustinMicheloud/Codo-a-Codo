@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Nuosu SIL', serif;
+}
+
+ul{
+list-style-type: none;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #fff;
+}
+
+
+/*header*/
+.header {
+    background: #162b4e;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid grey;
+    margin-bottom: 10px;
+}
+
+.img-logo{
+    height: 170px;
+    margin: 10px;
+ }
+
+ .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #10213f;
+    border: 2px solid #1f3863;
+}
+
+.nav li a {
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: .6em 1em;
+}
+
+.nav li a:hover {
+    background: #204077;
+}
+
+.nav li a:active {
+    background: #415d8d;
+}
+
+
+/*Aca aplicamos el flex*/
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nav li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+/*section*/
+.servicios{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo h2{
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 60%;
+}
+
+.carta{
+    flex: 0 1 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px;
+    border: 4px solid grey;
+    border-radius: 5px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.carta h2{
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.carta p{
+    margin: 10px 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.icono{
+    height: 200px;
+}
+/*fin section*/
+
+/*footer*/
+.footer {
+    background: #000;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: #162b4e;
+    border-top: 5px solid grey;
+}
+
+.footer p{
+    color: #fff;
+    margin: 0 10px;
+}
+
+
+.email{
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.textoEmail{
+    color: #fff;
+}
+
+
+.textoEmail:hover{
+    color: #577bb9;
+}
+
+.telefono{
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.iconFooter{
+    height: 30px;
+}
+/*fin footer*/
+
+
+
+
+@media all and (max-width: 1100px){
+    .header{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cards{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 70%;
+    }
+    
+
+    .footer{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media all and (max-width: 500px){
+
+    .section{
+        margin: 0px;
+    }
+
+    .telefono{
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .email{
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+
+    .cards{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+    }
+
+    .icono{
+        width: 80%;
+        height: auto;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .carta h2{
+        width: 90%;
+        height: auto;
+        font-size: 18px;
+    }
+
+    .carta p{
+        width: 90%;
+        height: auto;
+        font-size: 17px;
+    }
+
+    .footer p{
+        font-size: 10px;
+    }
+
+    .iconFooter{
+        height: 20px;
+    }
+}

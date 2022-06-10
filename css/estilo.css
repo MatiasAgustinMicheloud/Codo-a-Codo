@@ -1,0 +1,384 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Nuosu SIL', serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+p{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #fff;
+}
+
+
+/*header*/
+.header {
+    background: #162b4e;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid grey;
+    margin-bottom: 10px;
+}
+
+.img-logo{
+   height: 170px;
+   margin: 10px;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #10213f;
+    border: 2px solid #1f3863;
+}
+
+.nav li a {
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: .6em 1em;
+}
+
+.nav li a:hover {
+    background: #204077;
+}
+
+.nav li a:active {
+    background: #415d8d;
+}
+
+/*Aca aplicamos el flex*/
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nav li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+/*
+.nav{
+    background-color: rgb(25, 43, 126);
+    width: 100%;
+    margin: 0 auto;
+}
+    .nav ul{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav li{
+        flex: 0 1 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .nav a{
+        color: #fff;
+        padding: 0 10px;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: .6em 1em;
+    }
+
+    .nav a:hover{
+        color: rgb(0, 117, 252);
+        background: rgb(111, 228, 243);
+    }
+
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .nav li{
+        flex: 1 0 auto;
+        text-align: center;
+    }
+*/
+
+/*fin header*/
+
+
+/*section*/
+.section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px 50px;
+    align-items: center;
+}
+
+.video{
+    flex: 0 1 40%;
+    margin-bottom: 20px;
+}
+
+.video-camiones{
+    height: 450px;
+}
+
+.texto-presentacion{
+    color: rgb(0, 0, 0);
+    flex: 0 1 40%;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.texto-presentacion h2{
+    padding: 10px 0;
+}
+
+.historia{
+    flex: 0 1 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.linea-tiempo{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.historia h2{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.li{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.imagenLineatiempo{
+    height: 50px;
+    margin: 0 15px;
+}
+
+.texto-lineaTiempo{
+    width: 80%;
+    text-align: justify;
+}
+
+.direccion{
+    flex: 0 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.direccion h2{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+.mapa{
+    margin: 20px;
+    height: 400px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+/*fin section*/
+
+/*footer*/
+.footer {
+    background: #000;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: #162b4e;
+    border-top: 5px solid grey;
+}
+
+.footer p{
+    color: #fff;
+    margin: 0 10px;
+}
+
+
+.email{
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.textoEmail{
+    color: #fff;
+}
+
+
+.textoEmail:hover{
+    color: #577bb9;
+}
+
+.telefono{
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.iconFooter{
+    height: 30px;
+}
+/*fin footer*/
+
+
+@media all and (max-width: 1500px){
+    .header{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section{
+        height: auto;
+        width: auto;
+    }
+
+    .texto-presentacion{
+        color: rgb(0, 0, 0);
+        flex: 0 1 70%;
+        text-align: justify;
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-right: 30px;
+    }
+
+    .video{
+        flex: 0 1 90%;
+        margin-bottom: 20px;
+    }
+
+    .video-camiones{
+        height: 450px;
+        width: 100%;
+    }
+
+    .footer{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media all and (max-width: 700px) {
+    p{
+        font-size: 14px;
+    }
+
+    .section{
+        margin: 0px;
+    }
+
+    .texto-presentacion{
+        margin: 0;
+    }
+
+    .video{
+        margin-top: 20px;
+    }
+
+    .video-camiones{
+        height: 150px;
+    }
+
+    .historia{
+        flex: 0 1 90%;
+    }
+
+    .linea-tiempo{
+        width: 100%;
+    }
+
+    .li{
+        margin: 5px 0;
+    }
+
+    .imagenLineatiempo{
+        height: 30px;
+    }
+
+    .direccion{
+        flex: 0 1 80%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 30px 0;
+    }
+
+    .mapa{
+        margin: 20px;
+        height: 200px;
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+        width: 100%;
+    }
+
+    .telefono{
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .footer p{
+        font-size: 10px;
+    }
+
+    .email{
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .iconFooter{
+        height: 20px;
+    }
+    
+}

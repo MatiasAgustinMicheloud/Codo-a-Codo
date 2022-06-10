@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forestal Mega SRL</title>
+    <link href="../icons/icon FM1.png" rel="icon">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nuosu+SIL&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1078e01a8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Contenedor global-->
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <div class="logo">
+                <a href="../index.html"> <img class="img-logo" src="../images/logo transparente.png" alt="Forestal Mega SRL"> </a> 
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/clientes.html">Clientes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!--Section-->
+        <section class="section">  
+            <article class="contactanos">
+                <h2 class="titulo-contacto">CONTACTANOS</h2>
+                <p class="texto-contacto">Para obtener información sobre nuestros servicios contacta con nosotros</p>
+            </article>
+
+            <article>
+                <form class="formulario" id="formulario" action="">
+                    <label for="nombre" class="espacio">Nombre: <input type="text" id="nombre" class="formulario_input" required></label>
+
+                    <div class="formulario_telefono espacio" id="form_telefono">
+                        <div class="form_tel" >
+                            <label for="telefono">Teléfono: <input type="text" id="telefono" class="formulario_input" required></label>
+                            <i class="fa-solid fa-circle-xmark icono_error"></i>
+                        </div>
+                        <p class="telefono_error">El teléfono solo puede contener números y un máximo de 14 dígitos</p>
+                    </div>
+
+                    <label for="email" class="espacio">Email: <input type="email" id="email" class="formulario_input" required></label>
+                    
+                    <label class="espacio">Servicio:
+                        <select id="servicio" class="formulario_input">
+                            <option value="CARGAS GENERALES">TRANSPORTE DE CARGAS GENERALES</option>
+                            <option value="PAQUETERIA Y ENCOMIENDAS" selected>PAQUETERIA Y ENCOMIENDAS</option>
+                            <option value="MUDANZAS">MUDANZAS</option>
+                            <option value="ALMACENAMIENTO">ALMACENAMIENTO</option>
+                        </select>
+                    </label>
+
+                    <label for="mensaje" class="espacio"> Mensaje: <textarea id="mensaje" cols="50" rows="5" class="formulario_textarea" required></textarea></label>
+
+                    <div class="formulario_mensaje espacio" id="formulario_mensaje">
+                        <p> <i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor complete los datos requeridos</p>
+                    </div>
+
+                    <div class="formulario_boton espacio">
+                        <button type="submit" class="boton">Enviar</button>
+                        <p class="formulario_enviado">El mensaje fue enviado exitosamente!</p>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <p>CONTACTO:</p>
+            <address class="email">
+                <img class="iconFooter" src="../icons/iconEmail.png" alt="iconEmail">
+                <p> EMAIL: <a  class="textoEmail" href="mailto:micheloud.matias@gmail.com">micheloud.matias@gmail.com</a> </p>
+            </address>
+
+            <div class="telefono">
+                <img class="iconFooter" src="../icons/iconTel.png" alt="iconTel">
+                <p>TEL: 123456789/123456789</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../js/formulario.js"></script>
+
+</body>
+</html>
